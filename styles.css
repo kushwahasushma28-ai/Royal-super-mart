@@ -1,29 +1,31 @@
-/* Base Resets & Font Smoothing */
+/* Base Resets */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth image zoom and overlay transitions.
-  We isolate these to custom CSS to maintain strict control over timing functions.
-*/
+/* Navbar Shrink Effect on Scroll */
+.nav-scrolled {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Product Card Interactions */
 .product-card .product-overlay {
-    backdrop-filter: blur(4px); /* Creates the frosted glass effect on hover */
+    backdrop-filter: blur(4px);
 }
 
 .product-card:hover .product-overlay {
     opacity: 1;
 }
 
-/* Quick-Add Button Animations
-  Handles the loading state and success checkmark animations
-*/
+/* Quick-Add Button Animations */
 .quick-add-btn {
     position: relative;
     overflow: hidden;
 }
 
-/* The loading spinner (hidden by default) */
 .quick-add-btn.loading .btn-icon {
     animation: spin 1s linear infinite;
 }
@@ -33,17 +35,16 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Success state styling */
 .quick-add-btn.success {
-    background-color: #F9F9F9; /* Alabaster */
-    color: #043927; /* Emerald */
-    pointer-events: none; /* Prevent double clicks */
+    background-color: #F9F9F9;
+    color: #043927;
+    pointer-events: none;
 }
 
-/* A subtle pop effect when the item is added */
+/* Cart Counter Pop */
 @keyframes pop {
     0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+    50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
 
