@@ -1,1 +1,52 @@
+/* Base Resets & Font Smoothing */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
+/* Smooth image zoom and overlay transitions.
+  We isolate these to custom CSS to maintain strict control over timing functions.
+*/
+.product-card .product-overlay {
+    backdrop-filter: blur(4px); /* Creates the frosted glass effect on hover */
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+/* Quick-Add Button Animations
+  Handles the loading state and success checkmark animations
+*/
+.quick-add-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* The loading spinner (hidden by default) */
+.quick-add-btn.loading .btn-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Success state styling */
+.quick-add-btn.success {
+    background-color: #F9F9F9; /* Alabaster */
+    color: #043927; /* Emerald */
+    pointer-events: none; /* Prevent double clicks */
+}
+
+/* A subtle pop effect when the item is added */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.cart-pop {
+    animation: pop 0.3s ease-in-out;
+}
