@@ -19,6 +19,12 @@
                 <li><a href="#map">Map</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            
+            <div class="nav-cart" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -31,12 +37,12 @@
         <div class="container hero-container">
             <div class="hero-text hidden-element">
                 <h1>The Future is <span class="glow-text">Here</span>.</h1>
-                <p class="editable-text">[Insert your powerful tagline here. E.g., Explore advanced robotics for home, industry, and hobbyists. The next generation of automation starts today.]</p>
+                <p class="editable-text">[Explore advanced robotics for home, industry, and hobbyists. The next generation of automation starts today.]</p>
                 <a href="#products" class="btn btn-primary">Explore Units</a>
             </div>
             <div class="hero-image hidden-element delay-200">
                 <img src="https://placehold.co/600x700/0a0a0a/00f7ff?text=Robot+Image+(Transparent+PNG+Needed)" alt="Futuristic Robot">
-                 <div class="glow-circle"></div>
+                <div class="glow-circle"></div>
             </div>
         </div>
     </section>
@@ -52,35 +58,35 @@
             <div class="product-grid">
                 <div class="product-card hidden-element">
                     <div class="product-img">
-                        <img src="https://placehold.co/300x300/1a1a1a/00f7ff?text=Product+1" alt="Product 1">
+                        <img src="https://placehold.co/300x300/1a1a1a/00f7ff?text=Product+1" alt="Model X-Alpha">
                     </div>
                     <div class="product-info">
                         <h4>Model X-Alpha</h4>
-                        <p class="editable-text">[Brief description: Advanced AI assistant companion suitable for home use.]</p>
+                        <p class="editable-text">[Advanced AI assistant companion suitable for home use.]</p>
                         <div class="price">$4,999.00</div>
-                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-secondary add-to-cart-btn" data-name="Model X-Alpha" data-price="4999.00">Add to Cart</button>
                     </div>
                 </div>
                  <div class="product-card hidden-element delay-100">
                     <div class="product-img">
-                        <img src="https://placehold.co/300x300/1a1a1a/bd00ff?text=Product+2" alt="Product 2">
+                        <img src="https://placehold.co/300x300/1a1a1a/bd00ff?text=Product+2" alt="CyberDog V2">
                     </div>
                     <div class="product-info">
                         <h4>CyberDog V2</h4>
-                        <p class="editable-text">[Brief description: Programmable quadruped robot for developers.]</p>
+                        <p class="editable-text">[Programmable quadruped robot for developers.]</p>
                         <div class="price">$1,299.00</div>
-                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-secondary add-to-cart-btn" data-name="CyberDog V2" data-price="1299.00">Add to Cart</button>
                     </div>
                 </div>
                 <div class="product-card hidden-element delay-200">
                     <div class="product-img">
-                        <img src="https://placehold.co/300x300/1a1a1a/00ff99?text=Product+3" alt="Product 3">
+                        <img src="https://placehold.co/300x300/1a1a1a/00ff99?text=Product+3" alt="Proto-Biped">
                     </div>
                     <div class="product-info">
                         <h4>Proto-Biped</h4>
-                        <p class="editable-text">[Brief description: Research-grade walking bipedal platform.]</p>
+                        <p class="editable-text">[Research-grade walking bipedal platform.]</p>
                         <div class="price">$8,500.00</div>
-                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-secondary add-to-cart-btn" data-name="Proto-Biped" data-price="8500.00">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -91,28 +97,27 @@
             <div class="product-grid">
                  <div class="product-card hidden-element">
                     <div class="product-img">
-                        <img src="https://placehold.co/300x300/1a1a1a/ff9900?text=Drone+1" alt="Drone 1">
+                        <img src="https://placehold.co/300x300/1a1a1a/ff9900?text=Drone+1" alt="SkyHawk">
                     </div>
                     <div class="product-info">
                         <h4>SkyHawk Surveillance</h4>
-                        <p class="editable-text">[Brief description: Long-range industrial inspection drone.]</p>
+                        <p class="editable-text">[Long-range industrial inspection drone.]</p>
                         <div class="price">$3,100.00</div>
-                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-secondary add-to-cart-btn" data-name="SkyHawk Surveillance" data-price="3100.00">Add to Cart</button>
                     </div>
                 </div>
                  <div class="product-card hidden-element delay-100">
                     <div class="product-img">
-                        <img src="https://placehold.co/300x300/1a1a1a/00f7ff?text=Drone+2" alt="Drone 2">
+                        <img src="https://placehold.co/300x300/1a1a1a/00f7ff?text=Drone+2" alt="Nano Swarm">
                     </div>
                     <div class="product-info">
                         <h4>Nano Swarm Kit</h4>
-                        <p class="editable-text">[Brief description: Set of 5 programmable nano-drones.]</p>
+                        <p class="editable-text">[Set of 5 programmable nano-drones.]</p>
                         <div class="price">$899.00</div>
-                        <button class="btn btn-secondary">View Details</button>
+                        <button class="btn btn-secondary add-to-cart-btn" data-name="Nano Swarm Kit" data-price="899.00">Add to Cart</button>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -144,7 +149,7 @@
             <div class="footer-col">
                 <h3>Contact Info</h3>
                 <div class="contact-details">
-                    <p><i class="fas fa-map-marker-alt highlight"></i> <span class="editable-text">[123 Tech Avenue, Silicon City, Future State]</span></p>
+                    <p><i class="fas fa-map-marker-alt highlight"></i> <span class="editable-text">[123 Tech Avenue, Silicon City]</span></p>
                     <p><i class="fas fa-phone highlight"></i> <span class="editable-text">[+1 (555) 123-4567]</span></p>
                     <p><i class="fas fa-envelope highlight"></i> <span class="editable-text">[sales@neonrobotics.com]</span></p>
                 </div>
@@ -159,9 +164,26 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Neon Robotics. All Rights Reserved.</p>
+            <p>© <span id="year"></span> Neon Robotics. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cargo</h2>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart-msg">Cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="total-price" class="glow-text">$0.00</span>
+            </div>
+            <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
 
     <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20your%20robotics%20products" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
